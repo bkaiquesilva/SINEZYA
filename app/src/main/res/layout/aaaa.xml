@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:orientation="horizontal"
+	android:layout_height="match_parent"
+	android:background="@color/branco" >
+
+	<TextView
+	    android:id="@+id/videocapture_rotate_iv"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+		android:layout_marginLeft="15dp"
+		android:gravity="center|left"
+		android:layout_weight="1"
+		android:textStyle="normal"
+		android:paddingRight="15dp"
+		android:alpha="0.8"
+		android:fontFamily="@font/poppins_regular"
+		android:textColor="@color/colorPrimary"
+	    android:text="Por favor, deixe o seu dispositivo na horizontal." />
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginLeft="15dp"
+		android:layout_weight="1"/>
+
+</LinearLayout>

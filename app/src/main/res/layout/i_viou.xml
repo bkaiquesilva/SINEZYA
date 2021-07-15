@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/videocapture_container_rl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:keepScreenOn="true">
+
+    <SurfaceView
+        android:id="@+id/videocapture_preview_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <include layout="@layout/cronoo"/>
+
+    <ImageView
+        android:id="@+id/videocapture_preview_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+
+
+    <TextView
+        android:id="@+id/regressiva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:textSize="90dp"
+        android:alpha="0.5"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerInParent="true"/>
+
+
+
+    <ImageView
+        android:id="@+id/videocapture_recordbtn_iv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="invisible"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="-20dp"
+        android:clickable="false"/>
+
+    <ImageView
+        android:id="@+id/btn_aceitar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_above="@id/videocapture_recordbtn_iv"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/wergtrew"
+        android:clickable="true"
+        android:padding="8dp"
+        android:src="@drawable/btn_accept"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/btn_descartar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/videocapture_recordbtn_iv"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/wergtrew"
+        android:clickable="true"
+        android:padding="8dp"
+        android:src="@drawable/btn_decline"
+        android:visibility="gone"/>
+</RelativeLayout>

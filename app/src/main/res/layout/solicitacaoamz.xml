@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".SolicitacaoAmz">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/toolbar2"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NOVIDADES"
+            android:gravity="center|left"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:minHeight="90dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:fontFamily="@font/monoton" />
+
+        <ImageView
+            android:layout_width="?android:actionBarSize"
+            android:src="@drawable/ic_home_24"
+            android:padding="9dp"
+            android:onClick="ionoi"
+            android:layout_marginTop="10dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/ques"
+        android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/blog_listi"
+                android:layout_width="match_parent"
+                tools:listitem="@layout/pende_row"
+                android:layout_marginTop="1dp"
+                android:visibility="gone"
+                android:layout_marginBottom="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scrollbars="none" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/AlertEm4"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:padding="20dp"
+                android:gravity="center"
+                android:text="Ainda não há novidades."
+                android:layout_height="match_parent"/>
+
+    </LinearLayout>
+</RelativeLayout>

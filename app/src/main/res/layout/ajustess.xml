@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_10"
+    tools:context=".Ajustes">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:scrollbars="none"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:layout_height="wrap_content">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:background="@color/branco"
+           android:layout_height="?actionBarSize">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_centerVertical="true"
+               android:onClick="retornar"
+               android:tint="@color/black"
+               android:background="@drawable/ic_before_24"
+               android:layout_height="wrap_content"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:text="Configurações"
+               android:gravity="center"
+               android:textStyle="bold"
+               android:textSize="20dp"
+               android:textColor="@color/black"
+               android:layout_margin="10dp"
+               android:layout_height="match_parent"/>
+
+       </RelativeLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:layout_marginTop="10dp"
+           android:background="@color/branco"
+           android:layout_height="wrap_content">
+
+           <Switch
+               android:layout_width="match_parent"
+               android:text="Notificações"
+               android:id="@+id/notifiva"
+               android:layout_margin="10dp"
+               android:layout_height="wrap_content"/>
+
+           <Switch
+               android:layout_width="match_parent"
+               android:text="Sinais sonoros"
+               android:layout_margin="10dp"
+               android:id="@+id/tempov"
+               android:layout_height="wrap_content"/>
+
+           <Switch
+               android:layout_width="match_parent"
+               android:text="Looping infinito"
+               android:layout_margin="10dp"
+               android:id="@+id/tempoamg"
+               android:layout_height="wrap_content"/>
+
+           <Switch
+               android:layout_width="match_parent"
+               android:text="Apenas câmera"
+               android:layout_margin="10dp"
+               android:id="@+id/camera"
+               android:layout_height="wrap_content"/>
+
+           <Switch
+               android:layout_width="match_parent"
+               android:text="Alerta por e-mail"
+               android:layout_margin="10dp"
+               android:id="@+id/batepapo"
+               android:layout_height="wrap_content"/>
+
+           <Switch
+               android:layout_width="match_parent"
+               android:text="Transição animada"
+               android:id="@+id/escuro"
+               android:layout_margin="10dp"
+               android:layout_height="wrap_content"/>
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:orientation="horizontal"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:text="Limpar cache"
+                   android:layout_weight="1"
+                   android:onClick="l_cache"
+                   android:theme="@style/Widget.AppCompat.CompoundButton.Switch"
+                   android:layout_margin="10dp"
+                   android:layout_height="wrap_content"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:text="..."
+                   android:id="@+id/id_cache"
+                   android:gravity="right"
+                   android:theme="@style/Widget.AppCompat.CompoundButton.Switch"
+                   android:layout_margin="10dp"
+                   android:layout_height="wrap_content"/>
+
+           </LinearLayout>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:text="Deletar conta"
+               android:onClick="excluir"
+               android:theme="@style/Widget.AppCompat.CompoundButton.Switch"
+               android:layout_margin="10dp"
+               android:layout_height="wrap_content"/>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:layout_marginTop="10dp"
+           android:background="@color/branco"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:text="Compartilhar"
+               android:onClick="compartilharr"
+               android:theme="@style/Widget.AppCompat.CompoundButton.Switch"
+               android:layout_margin="10dp"
+               android:layout_height="wrap_content"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:text="Privacidade"
+               android:onClick="privacidadee"
+               android:theme="@style/Widget.AppCompat.CompoundButton.Switch"
+               android:layout_margin="10dp"
+               android:layout_height="wrap_content"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:text="Mais aplicativos"
+               android:onClick="mais_apps"
+               android:theme="@style/Widget.AppCompat.CompoundButton.Switch"
+               android:layout_margin="10dp"
+               android:layout_height="wrap_content"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:text="Mais jogos"
+               android:onClick="maisjogos"
+               android:theme="@style/Widget.AppCompat.CompoundButton.Switch"
+               android:layout_margin="10dp"
+               android:layout_height="wrap_content"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:text="Enviar e-mail"
+               android:onClick="en_email"
+               android:theme="@style/Widget.AppCompat.CompoundButton.Switch"
+               android:layout_margin="10dp"
+               android:layout_height="wrap_content"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:text="Sobre nós"
+               android:onClick="sobre_nos"
+               android:theme="@style/Widget.AppCompat.CompoundButton.Switch"
+               android:layout_margin="10dp"
+               android:layout_height="wrap_content"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:text="No makemake"
+               android:onClick="makemakee"
+               android:theme="@style/Widget.AppCompat.CompoundButton.Switch"
+               android:layout_margin="10dp"
+               android:layout_height="wrap_content"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:text="No instagram"
+               android:onClick="instagram"
+               android:theme="@style/Widget.AppCompat.CompoundButton.Switch"
+               android:layout_margin="10dp"
+               android:layout_height="wrap_content"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:text="No facebook"
+               android:onClick="facebookk"
+               android:theme="@style/Widget.AppCompat.CompoundButton.Switch"
+               android:layout_margin="10dp"
+               android:layout_height="wrap_content"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:text="No youtube"
+               android:onClick="youtube"
+               android:theme="@style/Widget.AppCompat.CompoundButton.Switch"
+               android:layout_margin="10dp"
+               android:layout_height="wrap_content"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:text="No lovely"
+               android:onClick="lovely"
+               android:theme="@style/Widget.AppCompat.CompoundButton.Switch"
+               android:layout_margin="10dp"
+               android:layout_height="wrap_content"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:text="No twitter"
+               android:onClick="twitter"
+               android:theme="@style/Widget.AppCompat.CompoundButton.Switch"
+               android:layout_margin="10dp"
+               android:layout_height="wrap_content"/>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:layout_marginTop="10dp"
+           android:background="@color/branco"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:textColor="@color/colorPrimary"
+               android:gravity="center"
+               android:text="©{E}DEBELZAAK S.O | 316 - 319 N.E"
+               android:theme="@style/Widget.AppCompat.CompoundButton.Switch"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="35dp"
+               android:layout_height="wrap_content"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:textColor="@color/colorPrimary"
+               android:gravity="center"
+               android:text="Todos os direitos reservados"
+               android:theme="@style/Widget.AppCompat.CompoundButton.Switch"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginBottom="35dp"
+               android:layout_height="wrap_content"/>
+
+       </LinearLayout>
+
+       </LinearLayout>
+
+   </ScrollView>
+
+</RelativeLayout>

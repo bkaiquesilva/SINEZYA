@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".SinezyaMeus">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="20dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/gh"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:clickable="false"
+        android:text="@string/pendente"
+        android:textStyle="bold"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?android:actionBarSize"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="?android:actionBarSize"
+            android:layout_marginTop="3dp"
+            android:id="@+id/atperfil"
+            android:layout_marginLeft="3dp"
+            android:layout_height="?android:actionBarSize">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:background="@drawable/cioo44"
+                android:scaleType="fitXY"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:background="@drawable/ic_contact"
+                android:scaleType="centerCrop"
+                android:id="@+id/Aperfil"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:background="@drawable/eion"
+                android:scaleType="fitXY"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/Anamed"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/ques"
+            android:text="@string/app_name"
+            android:textColor="@color/colorPrimary" />
+
+        <AutoCompleteTextView
+            android:layout_weight="1"
+            android:inputType="text"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/ques"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:enabled="false"
+            android:visibility="invisible"
+            android:textColorHint="@color/colorPrimary"
+            android:textColor="@color/colorPrimary" />
+
+        <ImageView
+            android:layout_width="?android:actionBarSize"
+            android:src="@drawable/ic_micro"
+            android:padding="12dp"
+            android:onClick="audei"
+            android:layout_height="?android:actionBarSize" />
+
+        <ImageView
+            android:layout_width="?android:actionBarSize"
+            android:src="@drawable/ic_delete_sweep"
+            android:padding="9dp"
+            android:id="@+id/btnexclu"
+            android:layout_height="?android:actionBarSize" />
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/branco"
+        android:layout_below="@+id/gh"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="170dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/branco"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_height="170dp"
+        android:orientation="vertical"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/lt_backg"
+        android:layout_below="@+id/gh"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="?android:actionBarSize"
+                    android:src="@drawable/ic_fastfood"
+                    android:id="@+id/addamigo"
+                    android:onClick="lanche"
+                    android:layout_marginTop="130dp"
+                    android:padding="12dp"
+                    android:layout_above="@id/perfilo"
+                    android:layout_height="?android:actionBarSize" />
+
+                <RelativeLayout
+                    android:layout_width="?android:actionBarSize"
+                    android:padding="11dp"
+                    android:id="@+id/perfilo"
+                    android:rotation="50"
+                    android:onClick="olar"
+                    android:layout_marginTop="-10dp"
+                    android:layout_above="@id/vernotication"
+                    android:layout_height="?android:actionBarSize">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:src="@drawable/ic_pan_tool_24"
+                        android:layout_height="match_parent" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="?actionBarSize"
+                    android:src="@drawable/ic_futebol24"
+                    android:padding="12dp"
+                    android:onClick="futbol"
+                    android:id="@+id/vernotication"
+                    android:layout_above="@id/atualizeer"
+                    android:layout_marginTop="-10dp"
+                    android:layout_height="?actionBarSize" />
+
+                <ImageView
+                    android:layout_width="?android:actionBarSize"
+                    android:src="@drawable/ic_game_24"
+                    android:id="@+id/atualizeer"
+                    android:onClick="gamee"
+                    android:layout_marginTop="-10dp"
+                    android:padding="11dp"
+                    android:layout_above="@+id/ejetar"
+                    android:layout_height="?android:actionBarSize" />
+
+                <ImageView
+                    android:layout_width="?android:actionBarSize"
+                    android:src="@drawable/ic_live_tv_24"
+                    android:id="@+id/ejetar"
+                    android:layout_marginTop="-10dp"
+                    android:padding="13dp"
+                    android:onClick="alive"
+                    android:layout_above="@id/securyy"
+                    android:layout_height="?android:actionBarSize" />
+
+
+                <ImageView
+                    android:layout_width="?android:actionBarSize"
+                    android:src="@drawable/ic_flight_24"
+                    android:id="@+id/securyy"
+                    android:layout_marginTop="-10dp"
+                    android:padding="12dp"
+                    android:onClick="filmee"
+                    android:layout_above="@id/barrar"
+                    android:layout_height="?android:actionBarSize" />
+
+                <ImageView
+                    android:layout_width="?android:actionBarSize"
+                    android:src="@drawable/ic_bahome_24"
+                    android:id="@+id/barrar"
+                    android:layout_marginTop="-10dp"
+                    android:padding="12dp"
+                    android:onClick="menuu"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="?android:actionBarSize" />
+
+            </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/blog_lisn"
+        android:layout_weight="1"
+        android:visibility="gone"
+        tools:listitem="@layout/blog_row"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:scrollbars="none" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/AlertEm555"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:padding="20dp"
+                android:gravity="center"
+                android:text="Este usuário não possui postagens, aguarde mais um pouco."
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

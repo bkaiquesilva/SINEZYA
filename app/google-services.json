@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "282756942468",
+    "firebase_url": "https://sinezya-fb163.firebaseio.com",
+    "project_id": "sinezya-fb163",
+    "storage_bucket": "sinezya-fb163.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282756942468:android:8758287527c9f210de10d1",
+        "android_client_info": {
+          "package_name": "com.edebelzaakso.sinezya"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "282756942468-6fgbb207i15ad093p0lf0j2a73pqbiet.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.edebelzaakso.sinezya",
+            "certificate_hash": "7b8ee89a5f1fa1e26c173c6634a68ce3f1d9c160"
+          }
+        },
+        {
+          "client_id": "282756942468-se8u3d55drl4hnfi80t6kqllv85og81j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ3SVh-GRsRKKj772l-KcAslEn83CEwDk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "282756942468-se8u3d55drl4hnfi80t6kqllv85og81j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

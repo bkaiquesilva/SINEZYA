@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    tools:context=".SinezyaAudio">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ghlk"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:minHeight="?android:actionBarSize"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="?android:actionBarSize"
+            android:layout_marginTop="3dp"
+            android:id="@+id/atperfil"
+            android:layout_marginLeft="3dp"
+            android:layout_height="?android:actionBarSize">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:background="@drawable/ic_contact"
+                android:scaleType="centerCrop"
+                android:id="@+id/MKpfil"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:background="@drawable/bdperfe"
+                android:scaleType="fitXY"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Kaique está"
+                android:gravity="left|center"
+                android:layout_gravity="center"
+                android:id="@+id/iumsn"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/ionli"
+                android:gravity="center"
+                android:layout_gravity="right"
+                android:layout_marginTop="1dp"
+                android:text="on-line"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ques"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="?android:actionBarSize"
+            android:layout_marginRight="5dp"
+            android:padding="9dp"
+            android:id="@+id/fimamiz"
+            android:layout_height="?android:actionBarSize"
+            android:src="@drawable/ic_delete_sweep"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/ghlk"
+        android:layout_marginTop="7dp"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        tools:listitem="@layout/msn_row"
+        android:layout_above="@id/looeee"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:padding="16dp" />
+
+
+
+
+        <com.eyalbira.loadingdots.LoadingDots
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/looeee"
+            android:visibility="gone"
+            android:layout_above="@id/sendContainer"
+            android:layout_marginRight="21dp"
+            android:paddingTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_alignParentRight="true"
+            app:LoadingDots_dots_color="@color/colorPrimary" />
+
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/rvimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:layout_margin="10dp"
+            android:layout_above="@id/sendContainer">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/butc"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/laytia"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <include
+                            android:layout_width="match_parent"
+                            layout="@layout/include_no_item"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/posi_image"
+                        android:scaleType="centerCrop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:id="@+id/deletia"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_delete"
+                        android:layout_margin="5dp"
+                        android:padding="6dp"
+                        android:background="@drawable/message_item_border"
+                        android:layout_height="35dp"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/post_like"
+                        android:layout_width="32dp"
+                        android:padding="2dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="start"
+                        android:background="@android:color/transparent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_yes_heart_colored" />
+
+                    <TextView
+                        android:id="@+id/contslikes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="left"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:text="..."
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:id="@+id/post_coment"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:padding="2dp"
+                        android:layout_gravity="start"
+                        android:background="@android:color/transparent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_comment" />
+
+                    <ImageButton
+                        android:id="@+id/post_share"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:padding="2dp"
+                        android:layout_gravity="start"
+                        android:background="@android:color/transparent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_mic_no2_24" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:id="@+id/prossi"
+                android:visibility="gone"
+                android:background="@drawable/ques"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/sendContainer"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/message_item_border"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <EditText
+            android:id="@+id/new_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:inputType="text"
+            android:imeOptions="actionSend"
+            android:layout_marginLeft="5dp"
+            android:hint="Digite sua mensagem"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:textSize="14sp" />
+
+
+            <ImageView
+                android:id="@+id/audy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:padding="4dp"
+                android:src="@drawable/ic_keyboard_voice_24dp" />
+
+        <ImageView
+            android:id="@+id/sendy"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_send"
+            android:tint="@color/border_red" />
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">SINEZYA</string>
+
+    <string name="MainFolderName">SINEZYA GO</string>
+    <string name="VideoToGIF">_TEMP</string>
+    <string name="VideoToImage">VideoToImage</string>
+    <string name="shipped_ffmpeg_version">n2.4.2</string>
+    <string name="cancel">Cancelar</string>
+    <string name="close">Fechar</string>
+    <string name="sure_close_app">Quer mesmo sair do aplicativo?</string>
+    <string name="go_back_title">Quer mesmo voltar?</string>
+    <string name="no">Não</string>
+    <string name="yes">Sim</string>
+
+
+    <string name="enter_yor_text">Escreva um comentário...</string>
+    <string name="enter_your_dispaly_name">Escreva seu nome...</string>
+    <string name="post_title">Evolução das espécies</string>
+    <string name="post_description">A evolução deve-se a uma série de processos naturais, tais como a mutação e deriva genética...</string>
+    <string name="pendente">POSTs PÚBLICOS</string>
+    <string name="link_fonte">Link da fonte</string>
+    <string name="fontess">Fonte</string>
+    <string name="digi">LIBERTAR - Mais Ciência!</string>
+
+</resources>

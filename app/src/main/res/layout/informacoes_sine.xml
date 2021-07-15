@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_10"
+    tools:context=".Info_Sinezya">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/branco"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:background="@drawable/ic_contact"
+                    android:layout_width="70dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="30dp"
+                    android:layout_height="70dp" />
+
+                <TextView
+                    android:id="@+id/numeee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Olá, meu nome é kaique!"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="30dp">
+
+                    <include
+                        layout="@layout/include_no_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/imSoliaa"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/butc"
+                        android:scaleType="fitXY" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Telefone: +55(33)99828-5010"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/cuntatooo"
+                android:visibility="gone"
+                android:drawableRight="@drawable/ic_bas_phone_24"
+                android:background="@color/branco"
+                android:layout_gravity="center"
+                android:theme="@style/Widget.AppCompat.CompoundButton.Switch"
+                android:textColor="@color/purple_500"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Nasci em: 01/06/2000"
+                android:gravity="left|center"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:padding="5dp"
+                android:id="@+id/nascii"
+                android:textStyle="bold"
+                android:background="@color/branco"
+                android:layout_gravity="center"
+                android:drawableTint="@color/black"
+                android:drawableRight="@drawable/ic_baseline_24"
+                android:theme="@style/Widget.AppCompat.CompoundButton.Switch"
+                android:textColor="@color/black"
+                android:layout_height="?actionBarSize"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="@color/branco"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Essas são as fotos que eu mais amo_"
+                    android:gravity="left"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:padding="5dp"
+                    android:id="@+id/fotii"
+                    android:textStyle="bold"
+                    android:background="@color/branco"
+                    android:drawableRight="@drawable/ic_bfavorite_24"
+                    android:layout_gravity="center"
+                    android:drawableTint="@color/purple_500"
+                    android:theme="@style/Widget.AppCompat.CompoundButton.Switch"
+                    android:textColor="@color/purple_500"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="20dp"
+                    android:layout_height="200dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:visibility="gone"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="16dp"
+                                android:src="@drawable/ic_gallery2"
+                                android:layout_marginBottom="4dp" />
+
+                            <ImageView
+                                android:id="@+id/imagem_111"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="16dp"
+                                android:scaleType="fitXY"
+                                android:layout_marginBottom="4dp" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="16dp"
+                                android:layout_marginBottom="4dp"
+                                android:background="@drawable/butc" />
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="8dp"
+                            android:id="@+id/separador1"
+                            android:visibility="gone"
+                            android:layout_height="match_parent"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:visibility="gone"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="16dp"
+                                android:src="@drawable/ic_gallery2"
+                                android:layout_marginBottom="4dp" />
+
+                            <ImageView
+                                android:id="@+id/imagem_222"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="16dp"
+                                android:scaleType="fitXY"
+                                android:layout_marginBottom="4dp"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="16dp"
+                                android:layout_marginBottom="4dp"
+                                android:background="@drawable/butc" />
+
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:visibility="gone"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="16dp"
+                                android:src="@drawable/ic_gallery2"
+                                android:layout_marginTop="4dp" />
+
+                            <ImageView
+                                android:id="@+id/imagem_333"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="16dp"
+                                android:scaleType="fitXY"
+                                android:layout_marginTop="4dp"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="16dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/butc" />
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="8dp"
+                            android:id="@+id/separador2"
+                            android:visibility="gone"
+                            android:layout_height="match_parent"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:visibility="gone"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="16dp"
+                                android:src="@drawable/ic_gallery2"
+                                android:layout_marginTop="4dp"/>
+
+                            <ImageView
+                                android:id="@+id/imagem_444"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="16dp"
+                                android:scaleType="fitXY"
+                                android:layout_marginTop="4dp" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="16dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/butc"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="Esse usuário não possui informações adicionais."
+                        android:theme="@style/Widget.AppCompat.CompoundButton.Switch"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:id="@+id/texto_adicional"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="Esse usuário não permite que suas informações pessoais sejam acessadas."
+                        android:theme="@style/Widget.AppCompat.CompoundButton.Switch"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:id="@+id/texto_priva"
+                        android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:background="@color/branco"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:gravity="left"
+                    android:id="@+id/ilovelyy"
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    android:text="Você pode me encontrar no lovely, clique aqui para acessar meu perfil."
+                    android:theme="@style/Widget.AppCompat.CompoundButton.Switch"
+                    android:layout_margin="10dp"
+                    android:drawableTint="@color/black"
+                    android:drawableRight="@drawable/ic_bopin_new_24"
+                    android:layout_marginTop="35dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

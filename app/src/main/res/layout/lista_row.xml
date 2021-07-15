@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/butc"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"
+            android:id="@+id/slamizade"
+            android:layout_height="?android:actionBarSize"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="?android:actionBarSize"
+                android:layout_height="?android:actionBarSize">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/imgLista"
+                    android:src="@drawable/shutter1"
+                    android:layout_height="match_parent"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/cion3"
+                    android:layout_height="match_parent"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_search"
+                android:padding="8dp"
+                android:gravity="right"
+                android:id="@+id/setnome"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:text="Kaique"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
