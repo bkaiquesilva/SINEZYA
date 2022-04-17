@@ -1,2 +1,2 @@
 # SINEZYA
-Sinezya
+![Screenshot](unnamed.jpeg)
